@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: 4d33bdb2a160b499fbce15f0d71c02b3
+timeCreated: 1462835730
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: seal_idle_0
+    21300002: seal_idle_1
+    21300004: seal_idle_2
+    21300006: seal_idle_3
+    21300008: seal_idle_4
+    21300010: seal_idle_5
+    21300012: seal_idle_6
+    21300014: seal_idle_7
+    21300016: seal_idle_8
+    21300018: seal_idle_9
+    21300020: seal_idle_10
+    21300022: seal_idle_11
+    21300024: seal_idle_12
+    21300026: seal_idle_13
+    21300028: seal_idle_14
+    21300030: seal_idle_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: seal_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: -50}
+        - {x: -96, y: -51}
+        - {x: 82, y: -51}
+        - {x: 116, y: -37}
+        - {x: 116, y: 29}
+        - {x: 77, y: 49}
+        - {x: -24, y: 49}
+        - {x: -100, y: 37}
+    - name: seal_idle_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 54, y: 50}
+        - {x: -62, y: 50}
+        - {x: -100, y: 44}
+        - {x: -100, y: -49}
+        - {x: -88, y: -51}
+        - {x: 96, y: -51}
+        - {x: 116, y: -21}
+        - {x: 116, y: 29}
+        - {x: 113, y: 34}
+    - name: seal_idle_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 51}
+        - {x: -100, y: -47}
+        - {x: -70, y: -51}
+        - {x: 97, y: -51}
+        - {x: 116, y: -18}
+        - {x: 116, y: 51}
+    - name: seal_idle_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: 51}
+        - {x: -71, y: 51}
+        - {x: -100, y: 45}
+        - {x: -100, y: -39}
+        - {x: -91, y: -41}
+        - {x: -7, y: -52}
+        - {x: 63, y: -52}
+        - {x: 77, y: -45}
+        - {x: 116, y: -16}
+        - {x: 116, y: 21}
+    - name: seal_idle_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 51}
+        - {x: -100, y: 27}
+        - {x: -100, y: -54}
+        - {x: 105, y: -54}
+        - {x: 116, y: -30}
+        - {x: 116, y: 43}
+        - {x: 79, y: 51}
+    - name: seal_idle_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 51}
+        - {x: -100, y: 27}
+        - {x: -100, y: -54}
+        - {x: 105, y: -54}
+        - {x: 116, y: -30}
+        - {x: 116, y: 43}
+        - {x: 79, y: 51}
+    - name: seal_idle_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 51}
+        - {x: -100, y: 37}
+        - {x: -100, y: -42}
+        - {x: -99, y: -48}
+        - {x: -77, y: -54}
+        - {x: 72, y: -54}
+        - {x: 117, y: -41}
+        - {x: 117, y: 26}
+        - {x: 79, y: 51}
+    - name: seal_idle_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 113, y: 4}
+        - {x: 116, y: 11}
+        - {x: 116, y: 15}
+        - {x: 111, y: 22}
+        - {x: 72, y: 51}
+        - {x: -78, y: 51}
+        - {x: -100, y: 29}
+        - {x: -100, y: -47}
+        - {x: -99, y: -48}
+        - {x: -49, y: -54}
+        - {x: 73, y: -54}
+        - {x: 117, y: -12}
+        - {x: 117, y: 3}
+        - {x: 115, y: 4}
+    - name: seal_idle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 113, y: 4}
+        - {x: 116, y: 11}
+        - {x: 116, y: 15}
+        - {x: 111, y: 22}
+        - {x: 72, y: 51}
+        - {x: -78, y: 51}
+        - {x: -100, y: 29}
+        - {x: -100, y: -47}
+        - {x: -99, y: -48}
+        - {x: -49, y: -54}
+        - {x: 73, y: -54}
+        - {x: 117, y: -12}
+        - {x: 117, y: 3}
+        - {x: 115, y: 4}
+    - name: seal_idle_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -50, y: 51}
+        - {x: -100, y: 37}
+        - {x: -100, y: -42}
+        - {x: -99, y: -48}
+        - {x: -77, y: -54}
+        - {x: 72, y: -54}
+        - {x: 117, y: -41}
+        - {x: 117, y: 26}
+        - {x: 79, y: 51}
+    - name: seal_idle_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 51}
+        - {x: -100, y: 27}
+        - {x: -100, y: -54}
+        - {x: 105, y: -54}
+        - {x: 116, y: -30}
+        - {x: 116, y: 43}
+        - {x: 79, y: 51}
+    - name: seal_idle_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -64, y: 51}
+        - {x: -100, y: 27}
+        - {x: -100, y: -54}
+        - {x: 105, y: -54}
+        - {x: 116, y: -30}
+        - {x: 116, y: 43}
+        - {x: 79, y: 51}
+    - name: seal_idle_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 69, y: 51}
+        - {x: -71, y: 51}
+        - {x: -100, y: 45}
+        - {x: -100, y: -39}
+        - {x: -91, y: -41}
+        - {x: -7, y: -52}
+        - {x: 63, y: -52}
+        - {x: 77, y: -45}
+        - {x: 116, y: -16}
+        - {x: 116, y: 21}
+    - name: seal_idle_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 51}
+        - {x: -100, y: -47}
+        - {x: -70, y: -51}
+        - {x: 97, y: -51}
+        - {x: 116, y: -18}
+        - {x: 116, y: 51}
+    - name: seal_idle_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 54, y: 50}
+        - {x: -62, y: 50}
+        - {x: -100, y: 44}
+        - {x: -100, y: -49}
+        - {x: -88, y: -51}
+        - {x: 96, y: -51}
+        - {x: 116, y: -21}
+        - {x: 116, y: 29}
+        - {x: 113, y: 34}
+    - name: seal_idle_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: -50}
+        - {x: -96, y: -51}
+        - {x: 82, y: -51}
+        - {x: 116, y: -37}
+        - {x: 116, y: 29}
+        - {x: 77, y: 49}
+        - {x: -24, y: 49}
+        - {x: -100, y: 37}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

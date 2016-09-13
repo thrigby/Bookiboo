@@ -1,0 +1,398 @@
+fileFormatVersion: 2
+guid: d8e669a0ff96447cb800e9b51d59c9b6
+timeCreated: 1459316813
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: oar_tail_slap_512_4096_0
+    21300002: oar_tail_slap_512_4096_1
+    21300004: oar_tail_slap_512_4096_2
+    21300006: oar_tail_slap_512_4096_3
+    21300008: oar_tail_slap_512_4096_4
+    21300010: oar_tail_slap_512_4096_5
+    21300012: oar_tail_slap_512_4096_6
+    21300014: oar_tail_slap_512_4096_7
+    21300016: oar_tail_slap_512_4096_8
+    21300018: oar_tail_slap_512_4096_9
+    21300020: oar_tail_slap_512_4096_10
+    21300022: oar_tail_slap_512_4096_11
+    21300024: oar_tail_slap_512_4096_12
+    21300026: oar_tail_slap_512_4096_13
+    21300028: oar_tail_slap_512_4096_14
+    21300030: oar_tail_slap_512_4096_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: oar_tail_slap_512_4096_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 164, y: 122}
+        - {x: 166, y: 135}
+        - {x: 166, y: 229}
+        - {x: 70, y: 229}
+        - {x: -40, y: 117}
+        - {x: -100, y: 40}
+        - {x: -100, y: -45}
+        - {x: -99, y: -46}
+        - {x: -31, y: -51}
+        - {x: 96, y: -51}
+        - {x: 122, y: -4}
+        - {x: 120, y: 18}
+        - {x: 108, y: 19}
+    - name: oar_tail_slap_512_4096_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 215, y: 138}
+        - {x: 215, y: 183}
+        - {x: 211, y: 194}
+        - {x: 162, y: 194}
+        - {x: 152, y: 191}
+        - {x: 125, y: 147}
+        - {x: -90, y: 55}
+        - {x: -90, y: -43}
+        - {x: -89, y: -46}
+        - {x: -72, y: -51}
+        - {x: 67, y: -51}
+        - {x: 112, y: -40}
+        - {x: 119, y: -15}
+        - {x: 101, y: 26}
+        - {x: 178, y: 95}
+    - name: oar_tail_slap_512_4096_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 184, y: 134}
+        - {x: 146, y: 119}
+        - {x: -58, y: 79}
+        - {x: -75, y: 50}
+        - {x: -75, y: -51}
+        - {x: 96, y: -51}
+        - {x: 237, y: 65}
+        - {x: 237, y: 120}
+        - {x: 226, y: 134}
+    - name: oar_tail_slap_512_4096_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -47, y: 54}
+        - {x: -66, y: 40}
+        - {x: -66, y: -49}
+        - {x: -40, y: -53}
+        - {x: 141, y: -53}
+        - {x: 176, y: -49}
+        - {x: 248, y: -6}
+        - {x: 248, y: 54}
+    - name: oar_tail_slap_512_4096_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52, y: 67}
+        - {x: -52, y: -56}
+        - {x: 164, y: -100}
+        - {x: 245, y: -100}
+        - {x: 245, y: 26}
+        - {x: 104, y: 67}
+    - name: oar_tail_slap_512_4096_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -52, y: 99}
+        - {x: -52, y: -53}
+        - {x: 59, y: -56}
+        - {x: 77, y: -35}
+        - {x: 75, y: -27}
+        - {x: 71, y: -23}
+        - {x: 71, y: -18}
+        - {x: 84, y: -45}
+        - {x: 93, y: -61}
+        - {x: 127, y: -94}
+        - {x: 141, y: -98}
+        - {x: 191, y: -98}
+        - {x: 191, y: 13}
+        - {x: 152, y: 99}
+    - name: oar_tail_slap_512_4096_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -54, y: 68}
+        - {x: -54, y: -52}
+        - {x: 23, y: -90}
+        - {x: 159, y: -90}
+        - {x: 159, y: -8}
+        - {x: 111, y: 89}
+        - {x: 44, y: 168}
+        - {x: -13, y: 168}
+        - {x: -43, y: 84}
+    - name: oar_tail_slap_512_4096_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 207}
+        - {x: 25, y: 199}
+        - {x: -68, y: 34}
+        - {x: -68, y: -25}
+        - {x: -26, y: -63}
+        - {x: 25, y: -76}
+        - {x: 119, y: -76}
+        - {x: 119, y: 137}
+        - {x: 103, y: 207}
+    - name: oar_tail_slap_512_4096_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 71, y: 207}
+        - {x: -65, y: 30}
+        - {x: -65, y: -54}
+        - {x: -9, y: -73}
+        - {x: 82, y: -73}
+        - {x: 123, y: -31}
+        - {x: 123, y: 207}
+    - name: oar_tail_slap_512_4096_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 123, y: 187}
+        - {x: -59, y: 30}
+        - {x: -72, y: 0}
+        - {x: -72, y: -25}
+        - {x: -49, y: -52}
+        - {x: -36, y: -56}
+        - {x: 47, y: -56}
+        - {x: 106, y: -26}
+        - {x: 167, y: 145}
+        - {x: 167, y: 187}
+    - name: oar_tail_slap_512_4096_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 160, y: 151}
+        - {x: -59, y: 50}
+        - {x: -59, y: -48}
+        - {x: -53, y: -49}
+        - {x: 103, y: -49}
+        - {x: 199, y: 87}
+        - {x: 199, y: 145}
+        - {x: 185, y: 151}
+    - name: oar_tail_slap_512_4096_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -71, y: -19}
+        - {x: -55, y: -46}
+        - {x: -43, y: -50}
+        - {x: 38, y: -50}
+        - {x: 86, y: -41}
+        - {x: 212, y: 62}
+        - {x: 212, y: 103}
+        - {x: -35, y: 103}
+        - {x: -71, y: 96}
+    - name: oar_tail_slap_512_4096_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 15, y: 126}
+        - {x: -67, y: 126}
+        - {x: -67, y: -50}
+        - {x: 73, y: -50}
+        - {x: 121, y: -28}
+        - {x: 213, y: -8}
+        - {x: 213, y: 59}
+    - name: oar_tail_slap_512_4096_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 151, y: 4}
+        - {x: 54, y: 150}
+        - {x: 5, y: 165}
+        - {x: -90, y: 165}
+        - {x: -90, y: 15}
+        - {x: -77, y: -42}
+        - {x: -42, y: -53}
+        - {x: 132, y: -53}
+        - {x: 153, y: -14}
+        - {x: 153, y: -2}
+    - name: oar_tail_slap_512_4096_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 210}
+        - {x: -75, y: 205}
+        - {x: -75, y: -51}
+        - {x: 109, y: -51}
+        - {x: 109, y: 67}
+        - {x: -3, y: 210}
+    - name: oar_tail_slap_512_4096_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 20, y: 233}
+        - {x: 8, y: 144}
+        - {x: -82, y: 58}
+        - {x: -90, y: 37}
+        - {x: -90, y: -48}
+        - {x: -37, y: -51}
+        - {x: 108, y: -51}
+        - {x: 108, y: 191}
+        - {x: 107, y: 233}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,365 @@
+fileFormatVersion: 2
+guid: 28a55c1a3fabf44d5b14652f832b51fe
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: back_idle_0
+    21300002: back_idle_1
+    21300004: back_idle_2
+    21300006: back_idle_3
+    21300008: back_idle_4
+    21300010: back_idle_5
+    21300012: back_idle_6
+    21300014: back_idle_7
+    21300016: back_idle_8
+    21300018: back_idle_9
+    21300020: back_idle_10
+    21300022: back_idle_11
+    21300024: back_idle_12
+    21300026: back_idle_13
+    21300028: back_idle_14
+    21300030: back_idle_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 512
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: back_idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 51}
+        - {x: -103, y: -47}
+        - {x: -85, y: -50}
+        - {x: 80, y: -50}
+        - {x: 108, y: -23}
+        - {x: 108, y: 51}
+    - name: back_idle_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 51}
+        - {x: -100, y: -41}
+        - {x: -76, y: -50}
+        - {x: 78, y: -50}
+        - {x: 104, y: -36}
+        - {x: 104, y: 31}
+        - {x: 82, y: 51}
+    - name: back_idle_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 53}
+        - {x: -8, y: 48}
+        - {x: -90, y: 37}
+        - {x: -103, y: 31}
+        - {x: -103, y: -51}
+        - {x: 98, y: -51}
+        - {x: 99, y: -50}
+        - {x: 100, y: -47}
+        - {x: 100, y: 43}
+        - {x: 71, y: 53}
+    - name: back_idle_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 54}
+        - {x: -103, y: 39}
+        - {x: -103, y: -51}
+        - {x: 100, y: -51}
+        - {x: 100, y: 46}
+        - {x: 65, y: 54}
+    - name: back_idle_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: 53}
+        - {x: -98, y: 39}
+        - {x: -98, y: -50}
+        - {x: 84, y: -50}
+        - {x: 100, y: -43}
+        - {x: 100, y: 53}
+    - name: back_idle_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39, y: 50}
+        - {x: -96, y: 31}
+        - {x: -96, y: -50}
+        - {x: -91, y: -51}
+        - {x: 67, y: -51}
+        - {x: 98, y: -44}
+        - {x: 100, y: -38}
+        - {x: 100, y: 43}
+        - {x: 94, y: 50}
+    - name: back_idle_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 49}
+        - {x: -98, y: 42}
+        - {x: -98, y: -41}
+        - {x: -32, y: -51}
+        - {x: 75, y: -51}
+        - {x: 101, y: -35}
+        - {x: 101, y: 40}
+        - {x: 65, y: 49}
+    - name: back_idle_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1280
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -98, y: 49}
+        - {x: -98, y: -50}
+        - {x: -85, y: -51}
+        - {x: 65, y: -51}
+        - {x: 100, y: -36}
+        - {x: 104, y: -26}
+        - {x: 104, y: 49}
+    - name: back_idle_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 49}
+        - {x: -98, y: 42}
+        - {x: -98, y: -41}
+        - {x: -32, y: -51}
+        - {x: 75, y: -51}
+        - {x: 101, y: -35}
+        - {x: 101, y: 40}
+        - {x: 65, y: 49}
+    - name: back_idle_9
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -39, y: 50}
+        - {x: -96, y: 31}
+        - {x: -96, y: -50}
+        - {x: -91, y: -51}
+        - {x: 67, y: -51}
+        - {x: 98, y: -44}
+        - {x: 100, y: -38}
+        - {x: 100, y: 43}
+        - {x: 94, y: 50}
+    - name: back_idle_10
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -49, y: 53}
+        - {x: -98, y: 39}
+        - {x: -98, y: -50}
+        - {x: 84, y: -50}
+        - {x: 100, y: -43}
+        - {x: 100, y: 53}
+    - name: back_idle_11
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 54}
+        - {x: -103, y: 39}
+        - {x: -103, y: -51}
+        - {x: 100, y: -51}
+        - {x: 100, y: 46}
+        - {x: 65, y: 54}
+    - name: back_idle_12
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 17, y: 53}
+        - {x: -8, y: 48}
+        - {x: -90, y: 37}
+        - {x: -103, y: 31}
+        - {x: -103, y: -51}
+        - {x: 98, y: -51}
+        - {x: 99, y: -50}
+        - {x: 100, y: -47}
+        - {x: 100, y: 43}
+        - {x: 71, y: 53}
+    - name: back_idle_13
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: 51}
+        - {x: -100, y: -41}
+        - {x: -76, y: -50}
+        - {x: 78, y: -50}
+        - {x: 104, y: -36}
+        - {x: 104, y: 31}
+        - {x: 82, y: 51}
+    - name: back_idle_14
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -103, y: 51}
+        - {x: -103, y: -47}
+        - {x: -85, y: -50}
+        - {x: 80, y: -50}
+        - {x: 108, y: -23}
+        - {x: 108, y: 51}
+    - name: back_idle_15
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 1024
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -76, y: 51}
+        - {x: -107, y: 35}
+        - {x: -107, y: -50}
+        - {x: 86, y: -50}
+        - {x: 110, y: -25}
+        - {x: 110, y: 8}
+        - {x: 67, y: 51}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

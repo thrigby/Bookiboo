@@ -1,0 +1,147 @@
+fileFormatVersion: 2
+guid: 24dff58cadbd7451a976055d37236a23
+timeCreated: 1458970748
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: oar_idle_1024_2048_small_0
+    21300002: oar_idle_1024_2048_small_1
+    21300004: oar_idle_1024_2048_small_2
+    21300006: oar_idle_1024_2048_small_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: oar_idle_1024_2048_small_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 233}
+        - {x: -2, y: 232}
+        - {x: 29, y: 94}
+        - {x: -99, y: 31}
+        - {x: -99, y: -49}
+        - {x: -91, y: -51}
+        - {x: 117, y: -51}
+        - {x: 117, y: 149}
+        - {x: 94, y: 233}
+    - name: oar_idle_1024_2048_small_1
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 84, y: 233}
+        - {x: 29, y: 233}
+        - {x: 7, y: 225}
+        - {x: 26, y: 125}
+        - {x: -100, y: 42}
+        - {x: -100, y: -46}
+        - {x: -99, y: -48}
+        - {x: -38, y: -51}
+        - {x: 114, y: -51}
+        - {x: 116, y: -40}
+        - {x: 116, y: 119}
+        - {x: 107, y: 199}
+    - name: oar_idle_1024_2048_small_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 108, y: 20}
+        - {x: 104, y: 178}
+        - {x: 95, y: 232}
+        - {x: 94, y: 233}
+        - {x: -9, y: 233}
+        - {x: -100, y: 37}
+        - {x: -100, y: -41}
+        - {x: -95, y: -54}
+        - {x: 114, y: -54}
+        - {x: 117, y: -38}
+        - {x: 117, y: 16}
+        - {x: 111, y: 21}
+    - name: oar_idle_1024_2048_small_3
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 1024
+        height: 1024
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 87, y: 233}
+        - {x: 28, y: 233}
+        - {x: 8, y: 218}
+        - {x: 31, y: 66}
+        - {x: -100, y: 33}
+        - {x: -100, y: -54}
+        - {x: 117, y: -54}
+        - {x: 117, y: 204}
+        - {x: 95, y: 232}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,159 @@
+fileFormatVersion: 2
+guid: 0a872b0d3a11f4179a2b2c4debf03c54
+timeCreated: 1462494028
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: sealexploder1_0
+    21300002: sealexploder1_1
+    21300004: sealexploder1_2
+    21300006: sealexploder1_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 256
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: sealexploder1_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 188
+        width: 69
+        height: 59
+      alignment: 9
+      pivot: {x: 0.3885842, y: 0.5868662}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -25.81231, y: -29.625107}
+        - {x: -22.81231, y: -34.625107}
+        - {x: -0.81230927, y: -34.625107}
+        - {x: 42.18769, y: -18.625107}
+        - {x: 42.18769, y: 11.374893}
+        - {x: 41.18769, y: 14.374893}
+        - {x: -4.8123093, y: 14.374893}
+        - {x: -25.81231, y: -18.625107}
+      - - {x: -20.81231, y: 0.3748932}
+        - {x: -20.81231, y: -9.625107}
+        - {x: -18.81231, y: -11.625107}
+        - {x: -13.812309, y: -11.625107}
+        - {x: -11.812309, y: -9.625107}
+        - {x: -11.812309, y: 0.3748932}
+      - - {x: -23.81231, y: 13.374893}
+        - {x: -23.81231, y: 4.374893}
+        - {x: -18.81231, y: 4.374893}
+        - {x: -16.81231, y: 5.374893}
+        - {x: -16.81231, y: 15.374893}
+        - {x: -18.81231, y: 17.374893}
+        - {x: -19.81231, y: 17.374893}
+      - - {x: -10.812309, y: 24.374893}
+        - {x: -10.812309, y: 18.374893}
+        - {x: -8.812309, y: 17.374893}
+        - {x: 2.1876907, y: 17.374893}
+        - {x: 2.1876907, y: 24.374893}
+    - name: sealexploder1_1
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 147
+        width: 49
+        height: 35
+      alignment: 9
+      pivot: {x: 0.60459435, y: 0.71964765}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -11.625122, y: 9.812332}
+        - {x: -27.625122, y: -10.187668}
+        - {x: -27.625122, y: -21.187668}
+        - {x: -26.625122, y: -24.187668}
+        - {x: 14.374878, y: -24.187668}
+        - {x: 17.374878, y: -18.187668}
+        - {x: 17.374878, y: 5.812332}
+        - {x: 2.374878, y: 9.812332}
+    - name: sealexploder1_2
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 143
+        width: 66
+        height: 41
+      alignment: 9
+      pivot: {x: 0.35439983, y: 0.7031298}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 42.60961, y: 0.17167664}
+        - {x: 21.609612, y: 11.171677}
+        - {x: 4.6096115, y: 11.171677}
+        - {x: -8.3903885, y: 5.1716766}
+        - {x: -19.390388, y: -4.8283234}
+        - {x: -19.390388, y: -12.828323}
+        - {x: -16.390388, y: -18.828323}
+        - {x: -2.3903885, y: -25.828323}
+        - {x: 15.6096115, y: -25.828323}
+        - {x: 23.609612, y: -24.828323}
+        - {x: 34.60961, y: -18.828323}
+        - {x: 42.60961, y: -12.828323}
+    - name: sealexploder1_3
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 29
+        width: 199
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 3, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -0.5, y: 48}
+        - {x: -16.5, y: 46}
+        - {x: -95.5, y: 29}
+        - {x: -95.5, y: -48}
+        - {x: 87.5, y: -48}
+        - {x: 98.5, y: -31}
+        - {x: 98.5, y: 30}
+        - {x: 70.5, y: 48}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

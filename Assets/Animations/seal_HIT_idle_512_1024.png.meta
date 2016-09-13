@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 2c3e61beaed154b52adfd0bf468f7d7c
+timeCreated: 1460092178
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: seal_HIT_idle_512_1024_0
+    21300002: seal_HIT_idle_512_1024_1
+    21300004: seal_HIT_idle_512_1024_2
+    21300006: seal_HIT_idle_512_1024_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: seal_HIT_idle_512_1024_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 51}
+        - {x: -55, y: 12}
+        - {x: -55, y: -38}
+        - {x: -37, y: -52}
+        - {x: 53, y: -52}
+        - {x: 101, y: -44}
+        - {x: 101, y: 21}
+        - {x: 71, y: 51}
+    - name: seal_HIT_idle_512_1024_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -32, y: 51}
+        - {x: -55, y: 12}
+        - {x: -55, y: -38}
+        - {x: -37, y: -52}
+        - {x: 53, y: -52}
+        - {x: 101, y: -44}
+        - {x: 101, y: 21}
+        - {x: 71, y: 51}
+    - name: seal_HIT_idle_512_1024_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76, y: 52}
+        - {x: -52, y: 52}
+        - {x: -55, y: 49}
+        - {x: -55, y: -49}
+        - {x: -54, y: -51}
+        - {x: 65, y: -51}
+        - {x: 96, y: -36}
+        - {x: 101, y: -31}
+        - {x: 101, y: 44}
+    - name: seal_HIT_idle_512_1024_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76, y: 52}
+        - {x: -52, y: 52}
+        - {x: -55, y: 49}
+        - {x: -55, y: -49}
+        - {x: -54, y: -51}
+        - {x: 65, y: -51}
+        - {x: 96, y: -36}
+        - {x: 101, y: -31}
+        - {x: 101, y: 44}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

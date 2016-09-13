@@ -1,0 +1,140 @@
+fileFormatVersion: 2
+guid: b88f3e7c45cfd426cb91c7f18b468502
+timeCreated: 1460092080
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: seal_HIT_512_1025_0
+    21300002: seal_HIT_512_1025_1
+    21300004: seal_HIT_512_1025_2
+    21300006: seal_HIT_512_1025_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: seal_HIT_512_1025_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -59, y: 49}
+        - {x: -72, y: 19}
+        - {x: -72, y: -36}
+        - {x: -58, y: -47}
+        - {x: -44, y: -49}
+        - {x: 104, y: -49}
+        - {x: 119, y: -26}
+        - {x: 119, y: 20}
+        - {x: 94, y: 49}
+    - name: seal_HIT_512_1025_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 56, y: 49}
+        - {x: -8, y: 49}
+        - {x: -55, y: 19}
+        - {x: -55, y: -46}
+        - {x: -37, y: -48}
+        - {x: 87, y: -48}
+        - {x: 101, y: -33}
+        - {x: 101, y: 21}
+    - name: seal_HIT_512_1025_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 49, y: 46}
+        - {x: -26, y: 46}
+        - {x: -52, y: 26}
+        - {x: -52, y: -46}
+        - {x: -27, y: -50}
+        - {x: 90, y: -50}
+        - {x: 96, y: -35}
+        - {x: 96, y: 14}
+        - {x: 93, y: 28}
+    - name: seal_HIT_512_1025_3
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 76, y: 52}
+        - {x: -52, y: 52}
+        - {x: -55, y: 49}
+        - {x: -55, y: -49}
+        - {x: -54, y: -51}
+        - {x: 65, y: -51}
+        - {x: 96, y: -36}
+        - {x: 101, y: -31}
+        - {x: 101, y: 44}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

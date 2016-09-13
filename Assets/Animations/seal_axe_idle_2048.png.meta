@@ -1,0 +1,419 @@
+fileFormatVersion: 2
+guid: e3180196005fa4ed8bf81d5f13059ed7
+timeCreated: 1462234631
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: seal_axe_idle_2048_0
+    21300002: seal_axe_idle_2048_1
+    21300004: seal_axe_idle_2048_2
+    21300006: seal_axe_idle_2048_3
+    21300008: seal_axe_idle_2048_4
+    21300010: seal_axe_idle_2048_5
+    21300012: seal_axe_idle_2048_6
+    21300014: seal_axe_idle_2048_7
+    21300016: seal_axe_idle_2048_8
+    21300018: seal_axe_idle_2048_9
+    21300020: seal_axe_idle_2048_10
+    21300022: seal_axe_idle_2048_11
+    21300024: seal_axe_idle_2048_12
+    21300026: seal_axe_idle_2048_13
+    21300028: seal_axe_idle_2048_14
+    21300030: seal_axe_idle_2048_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: seal_axe_idle_2048_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 186}
+        - {x: 48, y: 170}
+        - {x: 51, y: 137}
+        - {x: -100, y: 38}
+        - {x: -100, y: -50}
+        - {x: -87, y: -53}
+        - {x: 129, y: -53}
+        - {x: 129, y: 186}
+    - name: seal_axe_idle_2048_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 137}
+        - {x: -100, y: 39}
+        - {x: -100, y: -45}
+        - {x: -46, y: -53}
+        - {x: 109, y: -53}
+        - {x: 129, y: -33}
+        - {x: 129, y: 186}
+        - {x: 85, y: 186}
+        - {x: 48, y: 170}
+    - name: seal_axe_idle_2048_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 137}
+        - {x: -100, y: 47}
+        - {x: -100, y: -31}
+        - {x: -97, y: -41}
+        - {x: -89, y: -39}
+        - {x: -24, y: -53}
+        - {x: 125, y: -53}
+        - {x: 129, y: -50}
+        - {x: 129, y: 186}
+        - {x: 68, y: 186}
+        - {x: 48, y: 170}
+    - name: seal_axe_idle_2048_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: -39}
+        - {x: -91, y: -41}
+        - {x: -84, y: -36}
+        - {x: 2, y: -52}
+        - {x: 12, y: -53}
+        - {x: 117, y: -53}
+        - {x: 129, y: -32}
+        - {x: 129, y: 186}
+        - {x: 33, y: 186}
+        - {x: -100, y: 112}
+    - name: seal_axe_idle_2048_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 137}
+        - {x: -100, y: 59}
+        - {x: -100, y: -46}
+        - {x: -75, y: -54}
+        - {x: 122, y: -54}
+        - {x: 129, y: -45}
+        - {x: 129, y: 186}
+        - {x: 73, y: 186}
+        - {x: 48, y: 170}
+    - name: seal_axe_idle_2048_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 137}
+        - {x: -100, y: 59}
+        - {x: -100, y: -46}
+        - {x: -75, y: -54}
+        - {x: 122, y: -54}
+        - {x: 129, y: -45}
+        - {x: 129, y: 186}
+        - {x: 73, y: 186}
+        - {x: 48, y: 170}
+    - name: seal_axe_idle_2048_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 98, y: 4}
+        - {x: 95, y: 4}
+        - {x: 109, y: 5}
+        - {x: 118, y: 15}
+        - {x: 111, y: 20}
+        - {x: 129, y: 131}
+        - {x: 129, y: 186}
+        - {x: 76, y: 186}
+        - {x: -65, y: 123}
+        - {x: -100, y: 64}
+        - {x: -100, y: -44}
+        - {x: -97, y: -44}
+        - {x: -85, y: -39}
+        - {x: -23, y: -54}
+        - {x: 113, y: -54}
+        - {x: 128, y: -1}
+        - {x: 115, y: 3}
+        - {x: 113, y: 3}
+    - name: seal_axe_idle_2048_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 116, y: 11}
+        - {x: 129, y: 76}
+        - {x: 129, y: 186}
+        - {x: 41, y: 186}
+        - {x: -100, y: 88}
+        - {x: -100, y: -46}
+        - {x: -80, y: -54}
+        - {x: 117, y: -54}
+        - {x: 128, y: 0}
+        - {x: 115, y: 4}
+        - {x: 113, y: 4}
+    - name: seal_axe_idle_2048_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 116, y: 11}
+        - {x: 129, y: 76}
+        - {x: 129, y: 186}
+        - {x: 41, y: 186}
+        - {x: -100, y: 88}
+        - {x: -100, y: -46}
+        - {x: -80, y: -54}
+        - {x: 117, y: -54}
+        - {x: 128, y: 0}
+        - {x: 115, y: 4}
+        - {x: 113, y: 4}
+    - name: seal_axe_idle_2048_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 98, y: 4}
+        - {x: 95, y: 4}
+        - {x: 109, y: 5}
+        - {x: 118, y: 15}
+        - {x: 111, y: 20}
+        - {x: 129, y: 131}
+        - {x: 129, y: 186}
+        - {x: 76, y: 186}
+        - {x: -65, y: 123}
+        - {x: -100, y: 64}
+        - {x: -100, y: -44}
+        - {x: -97, y: -44}
+        - {x: -85, y: -39}
+        - {x: -23, y: -54}
+        - {x: 113, y: -54}
+        - {x: 128, y: -1}
+        - {x: 115, y: 3}
+        - {x: 113, y: 3}
+    - name: seal_axe_idle_2048_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 137}
+        - {x: -100, y: 59}
+        - {x: -100, y: -46}
+        - {x: -75, y: -54}
+        - {x: 122, y: -54}
+        - {x: 129, y: -45}
+        - {x: 129, y: 186}
+        - {x: 73, y: 186}
+        - {x: 48, y: 170}
+    - name: seal_axe_idle_2048_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 137}
+        - {x: -100, y: 59}
+        - {x: -100, y: -46}
+        - {x: -75, y: -54}
+        - {x: 122, y: -54}
+        - {x: 129, y: -45}
+        - {x: 129, y: 186}
+        - {x: 73, y: 186}
+        - {x: 48, y: 170}
+    - name: seal_axe_idle_2048_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -100, y: -39}
+        - {x: -91, y: -41}
+        - {x: -84, y: -36}
+        - {x: 2, y: -52}
+        - {x: 12, y: -53}
+        - {x: 117, y: -53}
+        - {x: 129, y: -32}
+        - {x: 129, y: 186}
+        - {x: 33, y: 186}
+        - {x: -100, y: 112}
+    - name: seal_axe_idle_2048_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 137}
+        - {x: -100, y: 47}
+        - {x: -100, y: -31}
+        - {x: -97, y: -41}
+        - {x: -89, y: -39}
+        - {x: -24, y: -53}
+        - {x: 125, y: -53}
+        - {x: 129, y: -50}
+        - {x: 129, y: 186}
+        - {x: 68, y: 186}
+        - {x: 48, y: 170}
+    - name: seal_axe_idle_2048_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 137}
+        - {x: -100, y: 39}
+        - {x: -100, y: -45}
+        - {x: -46, y: -53}
+        - {x: 109, y: -53}
+        - {x: 129, y: -33}
+        - {x: 129, y: 186}
+        - {x: 85, y: 186}
+        - {x: 48, y: 170}
+    - name: seal_axe_idle_2048_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 53, y: 186}
+        - {x: 48, y: 170}
+        - {x: 51, y: 137}
+        - {x: -100, y: 38}
+        - {x: -100, y: -50}
+        - {x: -87, y: -53}
+        - {x: 129, y: -53}
+        - {x: 129, y: 186}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

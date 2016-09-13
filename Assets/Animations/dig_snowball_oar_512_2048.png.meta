@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: afd6fbd8b38034f9cadb01c852d3850e
+timeCreated: 1460687918
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: dig_snowball_oar_512_2048_0
+    21300002: dig_snowball_oar_512_2048_1
+    21300004: dig_snowball_oar_512_2048_2
+    21300006: dig_snowball_oar_512_2048_3
+    21300008: dig_snowball_oar_512_2048_4
+    21300010: dig_snowball_oar_512_2048_5
+    21300012: dig_snowball_oar_512_2048_6
+    21300014: dig_snowball_oar_512_2048_7
+    21300016: dig_snowball_oar_512_2048_8
+    21300018: dig_snowball_oar_512_2048_9
+    21300020: dig_snowball_oar_512_2048_10
+    21300022: dig_snowball_oar_512_2048_11
+    21300024: dig_snowball_oar_512_2048_12
+    21300026: dig_snowball_oar_512_2048_13
+    21300028: dig_snowball_oar_512_2048_14
+    21300030: dig_snowball_oar_512_2048_15
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: dig_snowball_oar_512_2048_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 122, y: -30}
+        - {x: 124, y: -28}
+        - {x: 124, y: -25}
+        - {x: 119, y: -23}
+        - {x: 124, y: -15}
+        - {x: 118, y: -5}
+        - {x: 103, y: 197}
+        - {x: 93, y: 230}
+        - {x: 90, y: 233}
+        - {x: -14, y: 233}
+        - {x: -100, y: 44}
+        - {x: -100, y: -55}
+        - {x: -57, y: -57}
+        - {x: 74, y: -57}
+        - {x: 105, y: -47}
+        - {x: 109, y: -41}
+        - {x: 108, y: -33}
+    - name: dig_snowball_oar_512_2048_1
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 66, y: 233}
+        - {x: -69, y: 233}
+        - {x: -101, y: 192}
+        - {x: -101, y: -56}
+        - {x: -33, y: -68}
+        - {x: 99, y: -68}
+        - {x: 124, y: -52}
+        - {x: 124, y: 0}
+        - {x: 85, y: 209}
+    - name: dig_snowball_oar_512_2048_2
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 114, y: -45}
+        - {x: 115, y: -42}
+        - {x: 126, y: -42}
+        - {x: 126, y: 21}
+        - {x: 108, y: 184}
+        - {x: 65, y: 232}
+        - {x: 6, y: 232}
+        - {x: 1, y: 228}
+        - {x: 3, y: 143}
+        - {x: -103, y: 51}
+        - {x: -103, y: -43}
+        - {x: -100, y: -51}
+        - {x: -91, y: -48}
+        - {x: 14, y: -59}
+        - {x: 56, y: -58}
+        - {x: 54, y: -59}
+        - {x: 58, y: -71}
+        - {x: 91, y: -71}
+        - {x: 126, y: -56}
+        - {x: 126, y: -45}
+        - {x: 124, y: -44}
+        - {x: 113, y: -44}
+    - name: dig_snowball_oar_512_2048_3
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1536
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -105, y: -68}
+        - {x: 19, y: -67}
+        - {x: 55, y: -60}
+        - {x: 56, y: -59}
+        - {x: 61, y: -59}
+        - {x: 59, y: -59}
+        - {x: 55, y: -61}
+        - {x: 63, y: -73}
+        - {x: 78, y: -73}
+        - {x: 135, y: -53}
+        - {x: 135, y: 22}
+        - {x: 93, y: 201}
+        - {x: 59, y: 231}
+        - {x: -87, y: 231}
+        - {x: -105, y: 111}
+    - name: dig_snowball_oar_512_2048_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 51, y: 228}
+        - {x: -34, y: 228}
+        - {x: -38, y: 226}
+        - {x: 13, y: 69}
+        - {x: -109, y: 44}
+        - {x: -109, y: -51}
+        - {x: -108, y: -53}
+        - {x: 12, y: -75}
+        - {x: 97, y: -75}
+        - {x: 144, y: -49}
+        - {x: 144, y: 39}
+        - {x: 105, y: 175}
+    - name: dig_snowball_oar_512_2048_5
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -79, y: 42}
+        - {x: -105, y: 34}
+        - {x: -105, y: -51}
+        - {x: 19, y: -67}
+        - {x: 55, y: -60}
+        - {x: 56, y: -59}
+        - {x: 61, y: -59}
+        - {x: 59, y: -59}
+        - {x: 55, y: -61}
+        - {x: 60, y: -73}
+        - {x: 96, y: -73}
+        - {x: 122, y: -64}
+        - {x: 127, y: -61}
+        - {x: 127, y: 12}
+        - {x: 61, y: 42}
+      - - {x: 90, y: 171}
+        - {x: 37, y: 221}
+        - {x: -25, y: 221}
+        - {x: -25, y: 154}
+        - {x: -19, y: 125}
+        - {x: 121, y: -35}
+        - {x: 149, y: -35}
+        - {x: 160, y: -22}
+        - {x: 161, y: -17}
+        - {x: 161, y: 0}
+    - name: dig_snowball_oar_512_2048_6
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 173}
+        - {x: -71, y: 173}
+        - {x: -96, y: 154}
+        - {x: -53, y: 74}
+        - {x: -26, y: 50}
+        - {x: -108, y: 26}
+        - {x: -108, y: -46}
+        - {x: -92, y: -73}
+        - {x: 136, y: -73}
+        - {x: 143, y: -64}
+        - {x: 143, y: -24}
+        - {x: 6, y: 165}
+    - name: dig_snowball_oar_512_2048_7
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 1024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 97}
+        - {x: -39, y: 108}
+        - {x: -83, y: 108}
+        - {x: -98, y: 77}
+        - {x: -87, y: 49}
+        - {x: -71, y: 37}
+        - {x: -107, y: 22}
+        - {x: -108, y: 20}
+        - {x: -108, y: -52}
+        - {x: 66, y: -81}
+        - {x: 157, y: -81}
+        - {x: 162, y: -61}
+        - {x: 162, y: -48}
+        - {x: 154, y: -41}
+    - name: dig_snowball_oar_512_2048_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 32, y: 73}
+        - {x: -108, y: 73}
+        - {x: -108, y: -46}
+        - {x: 16, y: -63}
+        - {x: 51, y: -60}
+        - {x: 57, y: -59}
+        - {x: 61, y: -58}
+        - {x: 55, y: -61}
+        - {x: 63, y: -71}
+        - {x: 68, y: -73}
+        - {x: 95, y: -73}
+        - {x: 158, y: -67}
+        - {x: 177, y: -33}
+        - {x: 177, y: 17}
+    - name: dig_snowball_oar_512_2048_9
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 40, y: 41}
+        - {x: -67, y: 41}
+        - {x: -114, y: 36}
+        - {x: -114, y: -43}
+        - {x: -102, y: -68}
+        - {x: -78, y: -71}
+        - {x: 53, y: -71}
+        - {x: 117, y: -68}
+        - {x: 180, y: -38}
+        - {x: 180, y: 20}
+    - name: dig_snowball_oar_512_2048_10
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 105, y: 111}
+        - {x: 27, y: 68}
+        - {x: -123, y: 68}
+        - {x: -123, y: -60}
+        - {x: -108, y: -111}
+        - {x: 1, y: -111}
+        - {x: 122, y: -65}
+        - {x: 147, y: -19}
+        - {x: 147, y: 111}
+    - name: dig_snowball_oar_512_2048_11
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 512
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 86, y: 70}
+        - {x: 41, y: 57}
+        - {x: -21, y: 127}
+        - {x: -52, y: 127}
+        - {x: -74, y: 116}
+        - {x: -125, y: 43}
+        - {x: -125, y: -48}
+        - {x: 54, y: -126}
+        - {x: 119, y: -126}
+        - {x: 130, y: -110}
+        - {x: 130, y: -33}
+        - {x: 128, y: 32}
+    - name: dig_snowball_oar_512_2048_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 123, y: 67}
+        - {x: 95, y: 78}
+        - {x: 36, y: 78}
+        - {x: -18, y: 44}
+        - {x: -121, y: 25}
+        - {x: -121, y: -46}
+        - {x: -69, y: -63}
+        - {x: 124, y: -63}
+        - {x: 177, y: -54}
+        - {x: 177, y: 10}
+        - {x: 161, y: 17}
+    - name: dig_snowball_oar_512_2048_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -115, y: -8}
+        - {x: -113, y: -10}
+        - {x: -102, y: -13}
+        - {x: -99, y: -13}
+        - {x: -101, y: -13}
+        - {x: -104, y: -17}
+        - {x: -112, y: -26}
+        - {x: -115, y: -35}
+        - {x: -115, y: -46}
+        - {x: -53, y: -78}
+        - {x: 81, y: -78}
+        - {x: 216, y: -8}
+        - {x: 247, y: 47}
+        - {x: 247, y: 119}
+        - {x: 4, y: 119}
+        - {x: -115, y: 77}
+    - name: dig_snowball_oar_512_2048_14
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 183, y: 210}
+        - {x: 141, y: 210}
+        - {x: 111, y: 173}
+        - {x: 30, y: 108}
+        - {x: -69, y: 8}
+        - {x: -91, y: 27}
+        - {x: -105, y: 24}
+        - {x: -105, y: -24}
+        - {x: -100, y: -51}
+        - {x: -69, y: -66}
+        - {x: 120, y: -66}
+        - {x: 181, y: 94}
+        - {x: 200, y: 138}
+        - {x: 200, y: 201}
+    - name: dig_snowball_oar_512_2048_15
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 8, y: 211}
+        - {x: -17, y: 186}
+        - {x: -5, y: 142}
+        - {x: 9, y: 116}
+        - {x: -106, y: 24}
+        - {x: -106, y: -69}
+        - {x: 124, y: -69}
+        - {x: 124, y: 119}
+        - {x: 56, y: 211}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
