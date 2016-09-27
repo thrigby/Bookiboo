@@ -19,6 +19,12 @@ public class SealControl2 : NetworkBehaviour {
 	[SyncVar]
 	public NetworkInstanceId owner;
 
+	[SyncVar]
+	public string pname = "player";
+
+	[SyncVar]
+	public Color playerColor = Color.white;
+
 //	public string netowner;
 
 	public string pNumb;
@@ -228,7 +234,7 @@ public class SealControl2 : NetworkBehaviour {
 	public override void OnStartLocalPlayer()
     {
 //        GetComponent<MeshRenderer>().material.color = Color.red;
-        GetComponent<SpriteRenderer>().color = Color.yellow;
+        GetComponent<SpriteRenderer>().color = playerColor;
 		Camera.main.GetComponent<CameraRunner>().target=transform; //Fix camera on "me"
     }
 
@@ -1089,9 +1095,9 @@ public class SealControl2 : NetworkBehaviour {
 	[Command]
 	public void Cmd_Fire_Tail_Slap ()
 	{
-		Vector3 derp;
+//		Vector3 derp;
 		bool der = GetComponent<Player_SyncPosition>().netFacingRight;
-		derp = der ? Vector3.right : Vector3.left;
+//		derp = der ? Vector3.right : Vector3.left;
 //		Vector3 bulletSpawnLoc = combat_bulletSpawn.position + (derp * tailSlapRange);
 		Vector3 bulletSpawnLoc = combat_bulletSpawn.position;
 		var bullet = (GameObject)Instantiate (tail_slap_bulletPrefab, bulletSpawnLoc, combat_bulletSpawn.rotation);  
@@ -1109,9 +1115,10 @@ public class SealControl2 : NetworkBehaviour {
 
 	[Command]
 	public void Cmd_Fire_Nose_Flip ()
-	{	Vector3 derp;
+	{	
+//		Vector3 derp;
 		bool der = GetComponent<Player_SyncPosition>().netFacingRight;
-		derp = der ? Vector3.right : Vector3.left;
+//		derp = der ? Vector3.right : Vector3.left;
 //		Vector3 bulletSpawnLoc = combat_bulletSpawn.position + (derp * tailSlapRange);
 		Vector3 bulletSpawnLoc = combat_bulletSpawn.position;
 		var bullet = (GameObject)Instantiate (nose_flip_bulletPrefab, bulletSpawnLoc, combat_bulletSpawn.rotation);    	
