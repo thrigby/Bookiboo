@@ -11,7 +11,9 @@ namespace Prototype.NetworkLobby
     //Any LobbyHook can then grab it and pass those value to the game player prefab (see the Pong Example in the Samples Scenes)
     public class LobbyPlayer : NetworkLobbyPlayer
     {
-        static Color[] Colors = new Color[] { Color.white, Color.yellow, Color.cyan, Color.blue, Color.green, Color.red, Color.gray };
+//		public Color32 orangePlayer = new Color32 (238, 155, 79, 255);
+
+		static Color[] Colors = new Color[] { Color.white, Color.yellow, Color.cyan, Color.blue, Color.green, Color.red, Color.gray };
         //used on server to avoid assigning the same color to two player
         static List<int> _colorInUse = new List<int>();
 
@@ -30,10 +32,14 @@ namespace Prototype.NetworkLobby
         [SyncVar(hook = "OnMyColor")]
         public Color playerColor = Color.white;
 
+
+//BUTTON BASE			30	140	230	200	
+//BUTTON HIGHLIGHTED	20	80	230	200
+//PRESSED 				250	200	10	200
         public Color OddRowColor = new Color(250.0f / 255.0f, 250.0f / 255.0f, 250.0f / 255.0f, 1.0f);
         public Color EvenRowColor = new Color(180.0f / 255.0f, 180.0f / 255.0f, 180.0f / 255.0f, 1.0f);
 
-        static Color JoinColor = new Color(255.0f/255.0f, 0.0f, 101.0f/255.0f,1.0f);
+        static Color JoinColor = new Color(30.0f/255.0f, 140.0f/255.0F, 230.0f/255.0f,200.0f/255.0f);
         static Color NotReadyColor = new Color(34.0f / 255.0f, 44 / 255.0f, 55.0f / 255.0f, 1.0f);
         static Color ReadyColor = new Color(0.0f, 204.0f / 255.0f, 204.0f / 255.0f, 1.0f);
         static Color TransparentColor = new Color(0, 0, 0, 0);
@@ -81,7 +87,8 @@ namespace Prototype.NetworkLobby
             ColorBlock b = readyButton.colors;
             b.normalColor = c;
             b.pressedColor = c;
-            b.highlightedColor = c;
+//            b.highlightedColor = c;
+			b.highlightedColor = new Color(20.0f/255.0f, 80.0f/255.0F, 230.0f/255.0f,200.0f/255.0f);
             b.disabledColor = c;
             readyButton.colors = b;
         }
@@ -107,8 +114,8 @@ namespace Prototype.NetworkLobby
 
             CheckRemoveButton();
 
-            if (playerColor == Color.white)
-                CmdColorChange();
+//            if (playerColor == Color.white)
+//               CmdColorChange();
 
             ChangeReadyButtonColor(JoinColor);
 
