@@ -35,7 +35,7 @@ public class SealHealth : NetworkBehaviour {
 	[SyncVar(hook = "Dying")]
 	public bool dying = false;
 
-	[SyncVar(hook = "Dead")]
+//	[SyncVar(hook = "Dead")]
 	public bool dead = false;
 
 	[SyncVar]
@@ -60,6 +60,8 @@ public class SealHealth : NetworkBehaviour {
 
     public float deadTimer = 2f;
     public float deadTimerReset = 2f;
+
+	public bool onePointAvailable = true;
 //    public bool dead = false;
 
     Animator anim;
@@ -118,44 +120,55 @@ public class SealHealth : NetworkBehaviour {
 //		slider.value = currentHealth;
 
 
-				if (dying == true) 
-				{
+				if (dying == true) {
 						dyingTimer -= Time.deltaTime;
+						Debug.Log ("dying = true, DYINGTIMER = " + dyingTimer);
 //						anim.SetBool ("take_damage", false);
 //						anim.SetBool ("dying", true);
 						Dying (dying);
 				}
-				if (dyingTimer < 0) 
-				{
+				if (dyingTimer < 0) {
+						Debug.Log ("dyingTimer < 0, dying = false, dead = true");
 						dying = false;
 						dyingTimer = dyingTimerReset;
 						dead = true;
+						anim.SetBool ("dying", false);
+						anim.SetBool ("dead", true);
 				}
 
-				if (dead == true) 
-				{
+				if (dead == true) {
 						deadTimer -= Time.deltaTime;
+						Debug.Log ("DEADTIMER = " + deadTimer);
 //						anim.SetBool ("take_damage", false);
 //						anim.SetBool ("dying", false);
 //						anim.SetBool ("dead", true);
-						Dead (dead);
+//						Dead (dead);
 				}
 
-				if (deadTimer < 0) 
-				{
+				if (deadTimer < 0) {
+						Derped (onePointAvailable); //awards kill
+						onePointAvailable = false;
 						anim.SetBool ("dead", false);
 						deadTimer = deadTimerReset;
+						Debug.Log ("dead = false, kill awarded, DEADTIMER = " + deadTimer);
 						dead = false;
 						gettingHit = false;
-						if (destroyOnDeath) 
-						{
-							Destroy (gameObject);
-						} 
-						else 
-						{
+						if (destroyOnDeath) {
+								Destroy (gameObject);
+						} else {
 //							Debug.Log ("NETID: " + GetComponent<NetworkIdentity> ().netId);
-							currentHealth = maxHealth;
-							RpcRespawn ();
+								currentHealth = maxHealth;
+								if (isLocalPlayer) {
+										RpcRespawn ();
+										onePointAvailable = true;
+										Debug.Log ("RPC RESPAWN");
+								}
+							else
+							{
+								Respawn ();
+								onePointAvailable = true;
+								Debug.Log ("Respawn");
+							}
 						}
 
 				}
@@ -176,8 +189,8 @@ public class SealHealth : NetworkBehaviour {
 
 	public void TakeDamage (int amount)
 	{
-		if (!isServer) 
-			return; 
+//		if (!isServer) 
+//			return; 
 
 		if (isBlocking)
 			return;
@@ -197,6 +210,7 @@ public class SealHealth : NetworkBehaviour {
             else
             {
   				dying = true;
+  				Debug.Log ("takedamage + " + amount + " dying = true");
                 // called on the Server, invoked on the Clients
 //				currentHealth = maxHealth;
 //              RpcRespawn();
@@ -251,20 +265,16 @@ public class SealHealth : NetworkBehaviour {
         //health.KnockBack (bulletFacingRight);
 	public void KnockBack (float knockBackPwr)
 	{
-		gettingKnockedback = true;
-//		RpcKnockbackCallback(bulletFacingRight);
-//		if (bulletFacingRight == true) 
-//		{
-//			Debug.Log ("Knockback Right");
+		if (isServer) 
+		{ // true if the object is on a server (or host) and has been spawned.
+		} 
+		else 
+		{
+			gettingKnockedback = true; //do the RPC Callback for PVP
 			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (knockBackPwr, knockbackBumpForce));
 			Debug.Log ("Knockback: " + knockBackPwr);
-//		} 
-//		else 
-//		{
-//			Debug.Log ("Knockback Left");
-//			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (knockbackHitForce * -1, knockbackBumpForce));
-//		}
-		gettingKnockedback = false;
+			gettingKnockedback = false; //does this double-call the RPC?
+		}
 	}			
 
 //	[ClientRpc]
@@ -276,22 +286,14 @@ public class SealHealth : NetworkBehaviour {
 	[ClientRpc]
 	public void RpcKnockback (float knockBackPwr)
 	{
-		gettingKnockedback = true;
+//		gettingKnockedback = true;
 		if (gettingKnockedback == true) 
 		{
-//			if (bulletFacingRight == true) 
-//			{
-//				Debug.Log ("Knockback Callback Right");
-				GetComponent<Rigidbody2D> ().AddForce (new Vector2 (knockBackPwr, knockbackBumpForce));
-				Debug.Log ("Knockback RpcCallback: " + knockBackPwr);
-//			} 
-//			else 
-//			{
-//				Debug.Log ("Knockback Callback Left");
-//				GetComponent<Rigidbody2D> ().AddForce (new Vector2 (knockbackHitForce * -1, knockbackBumpForce));
-//			}
+			GetComponent<Rigidbody2D> ().AddForce (new Vector2 (knockBackPwr, knockbackBumpForce));
+			Debug.Log ("Knockback RpcCallback: " + knockBackPwr);
+			gettingKnockedback = false;
 		}
-		gettingKnockedback = false;
+
 	}
 
 //	[ClientRpc]
@@ -308,9 +310,9 @@ public class SealHealth : NetworkBehaviour {
 	}
 
 //	[ClientRpc]
-	void Dead (bool dead)
+	void Derped (bool onePointAvailable)
 	{
-		if (dead) 
+		if (onePointAvailable) 
 		{
 			Debug.Log ("killed by : " + lastHitBy);
 			var getMasterDerp = GameObject.FindGameObjectWithTag("masterderp");
@@ -318,6 +320,7 @@ public class SealHealth : NetworkBehaviour {
 			accessDerp.AwardKill (lastHitBy);
 			anim.SetBool ("dying", false);
 			anim.SetBool ("dead", true);
+			dead = false;
 		}
 		else
 			return;
@@ -332,15 +335,47 @@ public class SealHealth : NetworkBehaviour {
 	{
 	if (gettingHit == false) 
 		{	
-			Debug.Log ("callbackhook take_damage false");
+//			Debug.Log ("callbackhook take_damage false");
 			anim.SetBool ("take_damage", false);
 		}
 
 	if (gettingHit == true) 
 		{
-			Debug.Log ("callbackhook take_damage true");
+//			Debug.Log ("callbackhook take_damage true");
 			anim.SetBool ("take_damage", true);
 		}
+	}
+
+	void Respawn ()
+	{
+			anim.SetBool ("dying", false);
+        	anim.SetBool ("dead", false);
+			gettingHitTimer = gettingHitTimerReset;
+//			GetComponent<SealControl2> ().hasOar = false;
+//			GetComponent<SealControl2> ().hasAxe = false;
+//			GetComponent<SealControl2> ().hasTricorn = false;
+//			GetComponent<SealControl2> ().hasCutlass = false;
+//			GetComponent<SealControl2> ().hasFrogmouth = false;
+			gettingHit = false;
+//			anim.SetLayerWeight (0, 1);
+//			anim.SetLayerWeight (1, 0);
+//			anim.SetLayerWeight (2, 0);
+//			anim.SetLayerWeight (3, 0);
+//			anim.SetLayerWeight (4, 0);
+//			anim.SetLayerWeight (5, 0);
+
+
+            // Set the spawn point to origin as a default value
+//            Vector3 spawnPoint = Vector3.zero;
+
+            // If there is a spawn point array and the array is not empty, pick one at random
+  //          if (spawnPoints != null && spawnPoints.Length > 0)
+    //        {
+      //          spawnPoint = spawnPoints[Random.Range(0, spawnPoints.Length)].transform.position;
+        //    }
+
+            // Set the player’s position to the chosen spawn point
+          //  transform.position = spawnPoint;
 	}
 
     [ClientRpc]
@@ -348,7 +383,8 @@ public class SealHealth : NetworkBehaviour {
     {
         if (isLocalPlayer)
         {
-        	Debug.Log ("RPC respawn. take_damage false, dead false");
+//        	Debug.Log ("RPC respawn. take_damage false, dead false");
+			anim.SetBool ("dying", false);
         	anim.SetBool ("dead", false);
 //			anim.SetBool ("take_damage", false);
 			gettingHitTimer = gettingHitTimerReset;

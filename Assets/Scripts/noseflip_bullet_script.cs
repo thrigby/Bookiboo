@@ -20,8 +20,8 @@ public class noseflip_bullet_script : NetworkBehaviour {
 	public int amount = 20;
 
 	void OnTriggerEnter2D (Collider2D collision)
-		{
-		if (collision.gameObject.tag == "Player") 
+	{
+		if ((collision.gameObject.tag == "Player") || (collision.gameObject.tag == "enemy1")) 
 		{ 
 			var hit = collision.gameObject;
 			var health = hit.GetComponent<SealHealth> ();
@@ -31,10 +31,11 @@ public class noseflip_bullet_script : NetworkBehaviour {
 				health.TakeDamage (amount);
 				knockBackPwr = bulletFacingRight ? 200f : -200f;
 				health.KnockBack (knockBackPwr);
-				if (isServer) 
-				{
-					health.RpcKnockback (knockBackPwr);
-				}	
+//				if (isServer) 
+//				{
+//					health.RpcKnockback (knockBackPwr);
+//
+//				}	
 				Destroy (gameObject);
 //			Debug.Log ("BULLET: " + bulletFacingRight);
 			}

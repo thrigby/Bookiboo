@@ -61,7 +61,7 @@ public class SealLauncher : MonoBehaviour {
 						sealWalrusTailLaunchTimer -= Time.deltaTime;
 						if (sealWalrusTailLaunchTimer < 0) {
 								sealRig.AddForce (Vector2.up * sealWalrusTailLaunchForce, ForceMode2D.Force);
-								Debug.Log ("SealLauncher.cs walrus TAIL tag seal launch");
+//								Debug.Log ("SealLauncher.cs walrus TAIL tag seal launch");
 								sealWalrusTailLaunch = false;
 								sealWalrusTailLaunchTimer = sealWalrusTailLaunchTimerReset;
 						}
@@ -71,7 +71,7 @@ public class SealLauncher : MonoBehaviour {
 						if (sealNwLaunchTimer < 0) {
 								sealRig.AddForce (Vector2.up * sealNwLaunchForce, ForceMode2D.Force);
 //				sealRig.gravityScale = 0.5f;
-								Debug.Log ("SealLauncher.cs walrus NW tag seal launch");
+//								Debug.Log ("SealLauncher.cs walrus NW tag seal launch");
 								sealNwLaunch = false;
 								sealNwLaunchTimer = sealNwLaunchTimerReset;
 								sealGravityHalf = true;

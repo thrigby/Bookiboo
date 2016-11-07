@@ -604,7 +604,7 @@ public class SealControl2 : NetworkBehaviour {
 				//			firstKeyPress = 1;
 
 						bullRushTimer = true;
-						Debug.Log ("buttonuphorizontal");
+//						Debug.Log ("buttonuphorizontal");
 
 //						bullCount++;
 				}

@@ -21,7 +21,7 @@ public class cutlass_tail_bullet : NetworkBehaviour {
 
 	void OnTriggerEnter2D (Collider2D collision)
 	{
-		if (collision.gameObject.tag == "Player")
+		if ((collision.gameObject.tag == "Player") || (collision.gameObject.tag == "enemy1"))
 		{ 
 			var hit = collision.gameObject;
 			var health = hit.GetComponent<SealHealth> ();

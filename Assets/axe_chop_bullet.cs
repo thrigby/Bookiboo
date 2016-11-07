@@ -54,6 +54,27 @@ public class axe_chop_bullet : NetworkBehaviour {
 				}
 			Destroy (gameObject);
 			}
+		if (collision.gameObject.tag == "enemy1")
+		{ 
+			var hit = collision.gameObject;
+			var health = hit.GetComponent<SealHealth> ();
+//			hit.GetComponent<SealControl2> ().owner
+
+			if ((health != null) && (hit.GetComponent<SealControl2> ().owner != bulletOwner))
+			{
+				health.HitBy (bulletOwner);
+				health.TakeDamage (amount);
+				knockBackPwr = bulletFacingRight ? 500f : -500f;
+				health.KnockBack (knockBackPwr);
+				if (isServer) 
+				{
+					health.RpcKnockback (knockBackPwr);
+				}	
+				Destroy (gameObject);
+//			Debug.Log ("BULLET: " + bulletFacingRight);
+			}
+
+		}
 
 	}
 }

@@ -35,8 +35,10 @@ public class SpawnManager : MonoBehaviour
         {
             m_Pool[i] = (GameObject)Instantiate(m_Prefab, Vector3.up * 5, Quaternion.identity);
             m_Pool[i].name = "PoolObject" + i;
+            m_Pool[i].tag = "enemy1";
 //            m_Pool[i].GetComponent<"weapon"> ().SetActive (true);
-
+			m_Pool[i].GetComponent<SinglePlayerEnemyController> ().enabled = true;
+//			m_Pool[i].GetComponent<EnemyController1> ().enabled = true;
             m_Pool[i].SetActive(true);
 //			SetUpWeapon(i);
 //			SetUpHat(i);
@@ -81,65 +83,144 @@ public class SpawnManager : MonoBehaviour
     }
 
     public void SetUpGear (int i)
-	{
-		int x = Random.Range (1, 10);
-		Debug.Log ("SETUP GEAR X = " + x);				
-		switch (x) {
-			case 1:
-			{
-				m_Pool [i].GetComponent<Animator> ().SetLayerWeight (1, 1);
-				m_Pool [i].GetComponent<SealControl2> ().hasOar = true;		
-				m_Pool [i].GetComponent<SealControl2> ().netHasOar = true;		
-				Debug.Log ("x = 1 oar spawn");
-				break;
-			}
-			case 2:
-			{
-				m_Pool [i].GetComponent<Animator> ().SetLayerWeight (2, 1);
-				m_Pool [i].GetComponent<SealControl2> ().hasAxe = true;	
-				m_Pool [i].GetComponent<SealControl2> ().netHasAxe = true;
-				Debug.Log ("x = 2 axe spawn");			
-				break;
-			}
-			case 3:
-			{
-				m_Pool [i].GetComponent<Animator> ().SetLayerWeight (4, 1);	
-//				m_Pool[i].GetComponent<Animator> ().SetLayerWeight (5, 0);
-				m_Pool [i].GetComponent<SealControl2> ().hasCutlass = true;
-				m_Pool [i].GetComponent<SealControl2> ().netHasCutlass = true;
-				Debug.Log ("x = 3 cutlass spawn");
-				break;
-			}
-			case 4:
-			{
-				m_Pool [i].GetComponent<Animator> ().SetLayerWeight (2, 1);
-				m_Pool [i].GetComponent<SealControl2> ().hasAxe = true;	
-				m_Pool [i].GetComponent<SealControl2> ().netHasAxe = true;
-				Debug.Log ("x = 2 axe spawn");			
-				break;
-			}
-			case 5:
-			{
-				m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 1);	
-				m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 0);
-				m_Pool [i].GetComponent<SealControl2> ().hasTricorn = true;
-				m_Pool [i].GetComponent<SealControl2> ().netHasTricorn = true;
-				Debug.Log ("x = 4 tricorn spawn");
-				break;
-			}
-			case 6:
-			{
-				m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 0);	
-				m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 1);
-				m_Pool [i].GetComponent<SealControl2> ().hasFrogmouth = true;
-				m_Pool [i].GetComponent<SealControl2> ().netHasFrogmouth = true;
-				Debug.Log ("x = 6 frogmouth spawn");
-				break;
-			}
-//			case 7:
-//			{
-
-
+		{
+				int x = Random.Range (1, 13);
+				Debug.Log ("SETUP GEAR X = " + x);				
+				switch (x) {
+				case 1:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (1, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasOar = true;		
+								m_Pool [i].GetComponent<SealControl2> ().netHasOar = true;		
+								Debug.Log ("x = 1 oar");
+								break;
+						}
+				case 2:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (2, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasAxe = true;	
+								m_Pool [i].GetComponent<SealControl2> ().netHasAxe = true;
+								Debug.Log ("x = 2 axe");			
+								break;
+						}
+				case 3:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (4, 1);	
+//								m_Pool[i].GetComponent<Animator> ().SetLayerWeight (5, 0);
+								m_Pool [i].GetComponent<SealControl2> ().hasCutlass = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasCutlass = true;
+								Debug.Log ("x = 3 cutlass");
+								break;
+						}
+				case 4:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (2, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasAxe = true;	
+								m_Pool [i].GetComponent<SealControl2> ().netHasAxe = true;
+								Debug.Log ("x = 2 axe spawn");			
+								break;
+						}
+				case 5:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 1);	
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 0);
+								m_Pool [i].GetComponent<SealControl2> ().hasTricorn = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasTricorn = true;
+								Debug.Log ("x = 4 tricorn");
+								break;
+						}
+				case 6:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 0);	
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasFrogmouth = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasFrogmouth = true;
+								Debug.Log ("x = 6 frogmouth");
+								break;
+						}
+				case 7:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (1, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasOar = true;		
+								m_Pool [i].GetComponent<SealControl2> ().netHasOar = true;		
+								Debug.Log ("x = 1 oar spawn");
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 1);	
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 0);
+								m_Pool [i].GetComponent<SealControl2> ().hasTricorn = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasTricorn = true;
+								Debug.Log ("x = 4 tricorn");
+								break;
+						}
+				case 8:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (2, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasAxe = true;	
+								m_Pool [i].GetComponent<SealControl2> ().netHasAxe = true;
+								Debug.Log ("x = 2 axe");			
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 1);	
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 0);
+								m_Pool [i].GetComponent<SealControl2> ().hasTricorn = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasTricorn = true;
+								Debug.Log ("x = 4 tricorn");
+								break;
+						}
+				case 9:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (4, 1);	
+//								m_Pool[i].GetComponent<Animator> ().SetLayerWeight (5, 0);
+								m_Pool [i].GetComponent<SealControl2> ().hasCutlass = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasCutlass = true;
+								Debug.Log ("x = 3 cutlass");
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 1);	
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 0);
+								m_Pool [i].GetComponent<SealControl2> ().hasTricorn = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasTricorn = true;
+								Debug.Log ("x = 4 tricorn");
+								break;
+						}
+				case 10:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (1, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasOar = true;		
+								m_Pool [i].GetComponent<SealControl2> ().netHasOar = true;		
+								Debug.Log ("x = 1 oar");
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 0);	
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasFrogmouth = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasFrogmouth = true;
+								Debug.Log ("x = 6 frogmouth");
+								break;
+						}
+				case 11:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (2, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasAxe = true;	
+								m_Pool [i].GetComponent<SealControl2> ().netHasAxe = true;
+								Debug.Log ("x = 2 axe");			
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 0);	
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasFrogmouth = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasFrogmouth = true;
+								Debug.Log ("x = 6 frogmouth");
+								break;
+						}
+				case 12:
+						{
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (4, 1);	
+//								m_Pool[i].GetComponent<Animator> ().SetLayerWeight (5, 0);
+								m_Pool [i].GetComponent<SealControl2> ().hasCutlass = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasCutlass = true;
+								Debug.Log ("x = 3 cutlass");
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 0);	
+								m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 1);
+								m_Pool [i].GetComponent<SealControl2> ().hasFrogmouth = true;
+								m_Pool [i].GetComponent<SealControl2> ().netHasFrogmouth = true;
+								Debug.Log ("x = 6 frogmouth");
+								break;
+						}
+				default:
+        				Debug.Log ("13!");
+       							break;
 		}		
     }
 	
@@ -151,20 +232,20 @@ public class SpawnManager : MonoBehaviour
 			m_Pool [i].GetComponent<Animator> ().SetLayerWeight (1, 1);
 			m_Pool [i].GetComponent<SealControl2> ().hasOar = true;		
 			m_Pool [i].GetComponent<SealControl2> ().netHasOar = true;		
-			Debug.Log ("x = 1 oar spawn");
+			Debug.Log ("x = 1 oar");
 		}
 		if (x == 2) {
 			m_Pool [i].GetComponent<Animator> ().SetLayerWeight (2, 1);
 			m_Pool [i].GetComponent<SealControl2> ().hasAxe = true;	
 			m_Pool [i].GetComponent<SealControl2> ().netHasAxe = true;
-			Debug.Log ("x = 2 axe spawn");			
+			Debug.Log ("x = 2 axe");			
 		}
 		if (x == 3) {	
 			m_Pool [i].GetComponent<Animator> ().SetLayerWeight (4, 1);	
 //			m_Pool[i].GetComponent<Animator> ().SetLayerWeight (5, 0);
 			m_Pool [i].GetComponent<SealControl2> ().hasCutlass = true;
 			m_Pool [i].GetComponent<SealControl2> ().netHasCutlass = true;
-			Debug.Log ("x = 3 cutlass spawn");
+			Debug.Log ("x = 3 cutlass");
 		} else {
 		}
 	}
@@ -177,14 +258,14 @@ public class SpawnManager : MonoBehaviour
 			m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 0);
 			m_Pool [i].GetComponent<SealControl2> ().hasTricorn = true;
 			m_Pool [i].GetComponent<SealControl2> ().netHasTricorn = true;
-			Debug.Log ("y = 1 tricorn spawn");
+			Debug.Log ("y = 1 tricorn");
 		}
 		if (y == 2) {
 			m_Pool [i].GetComponent<Animator> ().SetLayerWeight (3, 0);	
 			m_Pool [i].GetComponent<Animator> ().SetLayerWeight (5, 1);
 			m_Pool [i].GetComponent<SealControl2> ().hasFrogmouth = true;
 			m_Pool [i].GetComponent<SealControl2> ().netHasFrogmouth = true;
-			Debug.Log ("y = 2 frogmouth spawn");
+			Debug.Log ("y = 2 frogmouth");
 		} else {
 		}
 	}
