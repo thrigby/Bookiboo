@@ -16,7 +16,9 @@ public class Anchor : MonoBehaviour {
 	void Start()
 	{
 		lineRenderer = GetComponentInChildren<LineRenderer> ();
-		lineRenderer.SetColors (c1, c2);
+//		lineRenderer.SetColors (c1, c2);
+		lineRenderer.startColor = c1;
+		lineRenderer.endColor = c2;
 	}
 
 	void Update () 

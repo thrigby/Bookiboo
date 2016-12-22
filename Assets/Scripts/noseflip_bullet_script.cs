@@ -15,7 +15,7 @@ public class noseflip_bullet_script : NetworkBehaviour {
 	public float snowBumpUpPwr = 600f;
 
 	[SyncVar]
-	public NetworkInstanceId bulletOwner;
+		public NetworkInstanceId bulletOwner;
 
 	public int amount = 20;
 

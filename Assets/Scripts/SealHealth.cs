@@ -122,13 +122,13 @@ public class SealHealth : NetworkBehaviour {
 
 				if (dying == true) {
 						dyingTimer -= Time.deltaTime;
-						Debug.Log ("dying = true, DYINGTIMER = " + dyingTimer);
+//						Debug.Log ("dying = true, DYINGTIMER = " + dyingTimer);
 //						anim.SetBool ("take_damage", false);
 //						anim.SetBool ("dying", true);
 						Dying (dying);
 				}
 				if (dyingTimer < 0) {
-						Debug.Log ("dyingTimer < 0, dying = false, dead = true");
+//						Debug.Log ("dyingTimer < 0, dying = false, dead = true");
 						dying = false;
 						dyingTimer = dyingTimerReset;
 						dead = true;
@@ -138,7 +138,7 @@ public class SealHealth : NetworkBehaviour {
 
 				if (dead == true) {
 						deadTimer -= Time.deltaTime;
-						Debug.Log ("DEADTIMER = " + deadTimer);
+//						Debug.Log ("DEADTIMER = " + deadTimer);
 //						anim.SetBool ("take_damage", false);
 //						anim.SetBool ("dying", false);
 //						anim.SetBool ("dead", true);
@@ -150,24 +150,25 @@ public class SealHealth : NetworkBehaviour {
 						onePointAvailable = false;
 						anim.SetBool ("dead", false);
 						deadTimer = deadTimerReset;
-						Debug.Log ("dead = false, kill awarded, DEADTIMER = " + deadTimer);
+//						Debug.Log ("dead = false, kill awarded, DEADTIMER = " + deadTimer);
 						dead = false;
 						gettingHit = false;
 						if (destroyOnDeath) {
-								Destroy (gameObject);
+								Respawn ();
+//								Destroy (gameObject);
 						} else {
 //							Debug.Log ("NETID: " + GetComponent<NetworkIdentity> ().netId);
 								currentHealth = maxHealth;
 								if (isLocalPlayer) {
 										RpcRespawn ();
 										onePointAvailable = true;
-										Debug.Log ("RPC RESPAWN");
+//										Debug.Log ("RPC RESPAWN");
 								}
 							else
 							{
 								Respawn ();
 								onePointAvailable = true;
-								Debug.Log ("Respawn");
+//								Debug.Log ("Respawn");
 							}
 						}
 
@@ -204,6 +205,7 @@ public class SealHealth : NetworkBehaviour {
             if (destroyOnDeath)
             {
 //           	DeathScene1 ();
+				dying = true;
 				Debug.Log ("BANG");
 //                Destroy(gameObject);
             } 

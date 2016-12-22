@@ -42,10 +42,20 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 //	public bool following = false;
 	public bool inMelee = false;
 
+	public bool	eSealBusyTailslapping = false;
+	public float eTailSlapLag = 1f;
+	public float eTailSlapLagReset = 1f;
+
 //	public bool onSnow = false;
 //	public GameObject snowCheck;
 //	float snowRadius = .5f;
 //	public LayerMask whatIsIce;
+
+	public bool sealBusyDigging = false;
+//		public bool sealDigTimerOn = false;
+	public float sealDiggingLag = 1.95f;
+	public float sealDiggingLagReset = 1.95f;
+
 
 
 //	[SyncVar]
@@ -63,6 +73,8 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 		public bool startTimer = true;
 
 		public bool eFacingRight = false;
+
+
 
 		void OnTriggerEnter2D (Collider2D col)
 		{
@@ -107,23 +119,23 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update ()
-		{
+	{
 //**********PROPULSION**********
 
-				if (startTimer == true) {
-						startDelay = initiativeTimer -= Time.deltaTime;				
-				}
+		if (startTimer == true) {
+			startDelay = initiativeTimer -= Time.deltaTime;				
+		}
 //				Debug.Log ("startDelay = " + startDelay);
 
-				distancex = transform.position.x - target.GetComponent<Transform> ().position.x;
-				distancey = transform.position.y - target.GetComponent<Transform> ().position.y;
+		distancex = transform.position.x - target.GetComponent<Transform> ().position.x;
+		distancey = transform.position.y - target.GetComponent<Transform> ().position.y;
 //			Debug.Log ("DISTANCE: " + distance);
 			
-				if (startDelay < 0) {
-						startTimer = false;
-						move = -.2f;
-						startDelay = startDelayReset;
-				}
+		if (startDelay < 0) {
+			startTimer = false;
+			move = -.2f;
+			startDelay = startDelayReset;
+		}
 //find the character's translate component, compare x coordinates, adjust facing.
 //				if (GetComponent<transform.position.x>() < GameObject.Find ("Character").GetComponent<transform.position.x> ())
 
@@ -131,30 +143,30 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 //			Debug.Log ("Player.x = " + GameObject.Find ("Character").GetComponent<Transform>().position.x);
 //			Debug.Log ("inMelee = " + inMelee);
 
-				if (transform.position.x < target.GetComponent<Transform> ().position.x) {
+		if (transform.position.x < target.GetComponent<Transform> ().position.x) {
 //						Debug.Log ("Player is to the right of Enemy 1");
-						eFacingRight = true;
-						if (!facingRight)
-								Flip ();
+		eFacingRight = true;
+			if (!facingRight)
+				Flip ();
 //				move = .2f;
 //				Follow (true):
-				} else {						
+		} else {						
 //						Debug.Log ("Player is to the left of Enemy 1");
-						eFacingRight = false;
-						if (facingRight)
-								Flip ();
+			eFacingRight = false;
+			if (facingRight)
+			Flip ();
 //				move = -0.2f;
 //				Follow (true):
-				}
+		}
 
 //				if ((distancex > 1) || (distancex < -1)) {
 //						following = true;
 //						Debug.Log ("FOLLOWING");
-				followvar = Random.Range (1, 40);
-				if (distancex > followvar)
-						move = -0.2f;						
-				if (distancex < (followvar *= -1))
-						move = 0.2f;			
+		followvar = Random.Range (1, 100);
+		if (distancex > followvar)
+			move = -0.2f;						
+		if (distancex < (followvar *= -1))
+			move = 0.2f;			
 //				}
 //follow
 //distance = 1.86 @ contact
@@ -164,23 +176,24 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 //				public float followTimerReset = 0.5f;
 
 
-				if (grounded && !startTimer) { //@!Melee
-						if (distancex < -3) {
-								followTimer -= Time.deltaTime;
-								if (followTimer < 0) {
-										move = 0.2f;
-										following = true;
-										followTimer = followTimerReset;
-								}
-						} else if (distancex > 3) {
-								followTimer -= Time.deltaTime;
-								if (followTimer < 0) {
-										move = -0.2f;
-										following = true;
-										followTimer = followTimerReset;
-								}
+		if (grounded && !startTimer) { //@!Melee
+			if (distancex < -3) {
+				followTimer -= Time.deltaTime;
+					if (followTimer < 0) {
+						move = 0.2f;
+						following = true;
+						followTimer = followTimerReset;
+					}
+		} 
+		else if (distancex > 3) {
+				followTimer -= Time.deltaTime;
+					if (followTimer < 0) {
+						move = -0.2f;
+						following = true;
+						followTimer = followTimerReset;
 						}
 				}
+		}
 				//distance = enemy - player
 				// e 10 player 11 = -1
 				// e 10	player 9  =  1
@@ -207,6 +220,15 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 						jumpTimer = false;
 					}
 				}
+
+//**********END PROPULSION**********
+//each function call checks outside of update for a boolean. if that boolean is true, run the code inside of update corresponding to the boolean. the question is... 
+			Tailslap ();	//fixed
+			DigSnowBall ();
+//			NuzzleGrab ();
+//			NoseFlip ();
+//			BellyUp (); //fix me!
+		
 //FIRE CONTROL
 		if (inMelee == true)
 		{
@@ -214,7 +236,7 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 			timeInMelee += Time.deltaTime;
 			if (attackDelay < 0)								//ATTACK!!!
 			{
-//				DoAttack ();				
+				DoAttack ();				
 				initiativeTimer = initiativeTimerReset;
 				attackDelay = Random.Range (2,4);
 			}
@@ -223,7 +245,7 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 
 
 	}
-/*
+
 	public void DoAttack() {
 //				if (flipped || sealDamaged) 
 //				{
@@ -231,19 +253,25 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 //						busyFlipping = true;
 //				}
 //				else 
-				switch (Random.Range (0, 4)) 
+				switch (Random.Range (0, 1)) 
 				{
 				case 0:
-						Tailslap();
-						eSealBusyTailslapping = true;
-//						Debug.Log ("Tailslap!");
+						GetComponent<SealControl2>().eTailslap = true;
+						GetComponent<SealControl2>().EnemyTailSlap();
+//						GetComponent<SealControl2>().Tailslap();
+//						GetButtonDown ("Tailslap") = true;
+//						Event.keyCode.Z;
+//						Tailslap();
+//						eSealBusyTailslapping = true;
+						Debug.Log ("Tailslap!");
 						break;
 				case 1: 
-						DigSnowBall ();
-						sealBusyDigging = true;
-//						Debug.Log ("DigSnowball!");
+//						GameObject.GetComponent<SealControl2>().DigSnowBall();
+//						DigSnowBall ();
+//						sealBusyDigging = true;
+						Debug.Log ("DigSnowball!");
 						break;
-				case 2: 
+/*				case 2: 
 //						BellyUp ();
 						busyFlipping = true;
 //						Debug.Log ("Belly Up!");
@@ -259,9 +287,10 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 						//						Tailslap();
 //						Debug.Log ("DerpDerp!");
 						break;
+*/
 				}
 		}
-*/
+
 	public void Flip ()
 	{
 		facingRight = !facingRight;
@@ -271,6 +300,52 @@ public class SinglePlayerEnemyController : MonoBehaviour {
 		facingMult *= -1;
 //		Vector3 healthBarScale = healthBar.transform.localScale; //derp
 //		healthBarScale.x *= -1; //derp
+	}
+
+	public void Tailslap ()
+	{
+		if (eSealBusyTailslapping == true)
+		{
+//			Debug.Log ("tailslapfunction true");
+			eTailSlapLag -= Time.deltaTime;
+//			Debug.Log ("counter works");
+			anim.SetBool ("Tailslap", true);
+//			if (Input.GetButtonDown ("Tailslap")) 
+//				{									   //buttonmashing snippet
+//				anim.SetBool ("Tailslap", true);
+//				anim.PlayInFixedTime ("tailslap");
+//				tailSlapLag = tailSlapLagReset;
+//				}										
+//			}
+				if (eTailSlapLag < 0) 
+				{	
+					anim.SetBool (("Tailslap"), false);
+					eTailSlapLag = eTailSlapLagReset;
+					eSealBusyTailslapping = false;
+				}
+		}
+			
+				//END TAILSLAP
+	}
+
+	public void DigSnowBall ()
+	{
+		if (sealBusyDigging)//& onsnow phased out atm. prefab / object linking PITA 
+		{
+			anim.SetBool ("Digtrigger", true);
+		}
+
+		if (sealBusyDigging) 
+		{
+			sealDiggingLag -= Time.deltaTime;
+		}
+
+		if (sealDiggingLag < 0) 
+		{									
+			anim.SetBool (("Digtrigger"), false);
+			sealDiggingLag = sealDiggingLagReset;
+			sealBusyDigging = false;
+		}				
 	}
 
 //	public void Follow (true)

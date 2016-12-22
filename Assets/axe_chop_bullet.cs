@@ -15,7 +15,7 @@ public class axe_chop_bullet : NetworkBehaviour {
 	public float snowBumpUpPwr = 800f;
 
 	[SyncVar]
-	public NetworkInstanceId bulletOwner;
+		public NetworkInstanceId bulletOwner;
 
 	public int amount = 70;
 

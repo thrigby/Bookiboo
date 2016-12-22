@@ -15,7 +15,7 @@ public class oar_tail_bullet_script : NetworkBehaviour {
 	public float snowBumpUpPwr = 350f;
 
 	[SyncVar]
-	public NetworkInstanceId bulletOwner;
+		public NetworkInstanceId bulletOwner;
 
 
 	public int amount = 40;

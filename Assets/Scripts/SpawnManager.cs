@@ -84,7 +84,8 @@ public class SpawnManager : MonoBehaviour
 
     public void SetUpGear (int i)
 		{
-				int x = Random.Range (1, 13);
+				int x = 0;
+				//non-borked int x = Random.Range (1, 13);
 				Debug.Log ("SETUP GEAR X = " + x);				
 				switch (x) {
 				case 1:

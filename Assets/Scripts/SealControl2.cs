@@ -9,6 +9,11 @@ using System;
 public class SealControl2 : NetworkBehaviour {
 	// Use this for initialization
 
+	//AI TEST
+	public bool	eTailslap = false;
+	//END AI TEST
+
+
 //	public GameObject healthBar;
 
 	public int kills = 0;
@@ -240,6 +245,9 @@ public class SealControl2 : NetworkBehaviour {
 
 	void Start () 
 	{
+
+		owner = GetComponent<NetworkIdentity>().netId;
+		Debug.Log ("*******************" + owner);
 //		GameObject go = this.gameObject;
 //		GameObject moo = GameObject.FindGameObjectWithTag("masterderp");
 //		moo.GetComponent<MasterDerp> ().GosAdd (go);
@@ -312,8 +320,7 @@ public class SealControl2 : NetworkBehaviour {
 
 				// it hurts when it lands
 				if (landingSplat) {
-						if (grounded) 
-						{
+						if (grounded) {
 								anim.SetBool ("landingSplat", true);
 								landingSplat = false;
 								Cmd_LandingSplat (grounded);
@@ -516,11 +523,19 @@ public class SealControl2 : NetworkBehaviour {
 //**************************************CLUNKY BULLET TIMERS **************************************
 				if (tailSlapBulletTimer)
 						tailSlapBulletDelay -= Time.deltaTime;
+
 				
 				if (tailSlapBulletDelay < 0) {
+//						Debug.Log (tailSlapBulletDelay);
+//						Debug.Log ("tailslapbullettimer functioning");
 						Cmd_Fire_Tail_Slap ();
+//						if (isServer) {
+//							Debug.Log ("!isLocalPlayer");
+//							Rpc_Fire_Tail_Slap ();
+//						}	
+
 						tailSlapBulletDelay = tailSlapBulletDelayReset;
-						tailSlapBulletTimer = false;	
+						tailSlapBulletTimer = false;
 				}
 
 				if (noseFlipBulletTimer)
@@ -696,7 +711,7 @@ public class SealControl2 : NetworkBehaviour {
 								bullRushCoolDownTimer = true;
 						}
 				}
-}			//******* end update *****               ******* end update ******				****** end update *****
+	}	//******* end update *****               ******* end update ******				****** end update *****
 
 	public void Flip ()
 	{
@@ -720,6 +735,21 @@ public class SealControl2 : NetworkBehaviour {
 			GetComponent<SpriteRenderer> ().sortingOrder = 1;
 			anim.SetBool ("Tailslap", true);
 			Invoke ("Stop_Tailslap_Anim", tailSlapAnimDur);
+		}
+	}
+
+	public void EnemyTailSlap ()
+	{
+		if (eTailslap)  
+		{
+			//			fatigue += 5;
+			GetComponent<SealControl2>().tailSlapBulletTimer = true;
+			GetComponent<SpriteRenderer> ().sortingOrder = 1;
+			anim.SetBool ("Tailslap", true);
+			Invoke ("Stop_Tailslap_Anim", tailSlapAnimDur);
+			Debug.Log ("E TAILSLAP FIRED!");
+//			Rpc_Fire_Tail_Slap();
+			Fire_Tail_Slap();
 		}
 	}
 
@@ -1103,7 +1133,7 @@ public class SealControl2 : NetworkBehaviour {
 		var bullet = (GameObject)Instantiate (tail_slap_bulletPrefab, bulletSpawnLoc, combat_bulletSpawn.rotation);  
 		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * move * 1.5f;
 		bullet.GetComponent<tailslap_bullet_script> ().bulletFacingRight = der;
-		owner = netId;
+//		owner = netId;
 		bullet.GetComponent<tailslap_bullet_script> ().bulletOwner = owner;		  	  	
 		NetworkServer.Spawn(bullet);
 	    Destroy(bullet, tailSlapLifeSpan);
@@ -1111,7 +1141,41 @@ public class SealControl2 : NetworkBehaviour {
 
 //		Vector3 snowBallBirthLoc = transform.position + derp + (Vector3.up * snowballVertOffSet);
 //		GameObject obj = (GameObject)Instantiate (bulletPrefab, snowBallBirthLoc, Quaternion.identity);
+/*
+	[ClientRpc]
+	void Rpc_Fire_Tail_Slap ()
+	{
+				//		Vector3 derp;
+		bool der = GetComponent<Player_SyncPosition>().netFacingRight;
+//		derp = der ? Vector3.right : Vector3.left;
+//		Vector3 bulletSpawnLoc = combat_bulletSpawn.position + (derp * tailSlapRange);
+		Vector3 bulletSpawnLoc = combat_bulletSpawn.position;
+		var bullet = (GameObject)Instantiate (tail_slap_bulletPrefab, bulletSpawnLoc, combat_bulletSpawn.rotation);  
+		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * move * 1.5f;
+		bullet.GetComponent<tailslap_bullet_script> ().bulletFacingRight = der;
+		owner = netId;
+		bullet.GetComponent<tailslap_bullet_script> ().bulletOwner = owner;		  	  	
+		NetworkServer.Spawn(bullet);
+	    Destroy(bullet, tailSlapLifeSpan);
+	    Debug.Log ("RPC TAIL SLAP BULLET");
+	}
+*/
+	void Fire_Tail_Slap ()
+	{
+		bool der = GetComponent<Player_SyncPosition>().netFacingRight;
+//		derp = der ? Vector3.right : Vector3.left;
+//		Vector3 bulletSpawnLoc = combat_bulletSpawn.position + (derp * tailSlapRange);
+		Vector3 bulletSpawnLoc = combat_bulletSpawn.position;
+		var bullet = (GameObject)Instantiate (tail_slap_bulletPrefab, bulletSpawnLoc, combat_bulletSpawn.rotation);  
+		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * move * 1.5f;
+		bullet.GetComponent<tailslap_bullet_script> ().bulletFacingRight = der;
+//		owner = netId;
+		bullet.GetComponent<tailslap_bullet_script> ().bulletOwner = owner;		  	  	
+		NetworkServer.Spawn(bullet);
+	    Destroy(bullet, tailSlapLifeSpan);
+	    Debug.Log ("VANILLA FUNCTION TAIL SLAP BULLET");
 
+	}
 
 	[Command]
 	public void Cmd_Fire_Nose_Flip ()
@@ -1125,7 +1189,7 @@ public class SealControl2 : NetworkBehaviour {
 //		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * 1.3f * facingMult;
 		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * move * 1.5f;
 		bullet.GetComponent<noseflip_bullet_script> ().bulletFacingRight = der;
-		owner = netId;
+//		owner = netId;
 		bullet.GetComponent<noseflip_bullet_script> ().bulletOwner = owner;		  	  	
 		NetworkServer.Spawn(bullet);
 //		Time.timeScale = 0f;
@@ -1143,7 +1207,7 @@ public class SealControl2 : NetworkBehaviour {
 		var bullet = (GameObject)Instantiate (oar_chop_bulletPrefab, bulletSpawnLoc, combat_bulletSpawn.rotation);    	
 		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * move * 1.5f;
 		bullet.GetComponent<oar_chop_bullet_script> ().bulletFacingRight = facingTempVar;
-		owner = netId;
+//		owner = netId;
 		bullet.GetComponent<oar_chop_bullet_script> ().bulletOwner = owner;		  	  	
 		NetworkServer.Spawn(bullet);
 	    Destroy(bullet, 0.5f);
@@ -1162,7 +1226,7 @@ public class SealControl2 : NetworkBehaviour {
 //		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * move * 1.5f;
 		bullet.GetComponent<Rigidbody2D>().velocity = bulletmove;
 		bullet.GetComponent<oar_tail_bullet_script> ().bulletFacingRight = facingTempVar;
-		owner = netId;
+//		owner = netId;
 		bullet.GetComponent<oar_tail_bullet_script> ().bulletOwner = owner;		  	  	
 		NetworkServer.Spawn(bullet);
        	Destroy(bullet, oarTailBulletLife);
@@ -1178,7 +1242,7 @@ public class SealControl2 : NetworkBehaviour {
 		var bullet = (GameObject)Instantiate (axe_chop_bulletPrefab, bulletSpawnLoc, combat_bulletSpawn.rotation);    	
 		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * move * 1.5f;
 		bullet.GetComponent<axe_chop_bullet> ().bulletFacingRight = facingTempVar;
-		owner = netId;
+//		owner = netId;
 		bullet.GetComponent<axe_chop_bullet> ().bulletOwner = owner;		  	  	
 		NetworkServer.Spawn(bullet);
 	    Destroy(bullet, 0.5f);
@@ -1194,7 +1258,7 @@ public class SealControl2 : NetworkBehaviour {
 		var bullet = (GameObject)Instantiate (axe_tail_bulletPrefab, bulletSpawnLoc, combat_bulletSpawn.rotation);    	
 		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * move * 1.5f;
 		bullet.GetComponent<axe_tail_bullet> ().bulletFacingRight = facingTempVar;
-		owner = netId;
+//		owner = netId;
 		bullet.GetComponent<axe_tail_bullet> ().bulletOwner = owner;		  	  	
 		NetworkServer.Spawn(bullet);
 	    Destroy(bullet, 0.5f);
@@ -1210,7 +1274,7 @@ public class SealControl2 : NetworkBehaviour {
 		var bullet = (GameObject)Instantiate (cutlass_chop_bulletPrefab, bulletSpawnLoc, combat_bulletSpawn.rotation);    	
 		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * move * 1.5f;
 		bullet.GetComponent<cutlass_chop_bullet> ().bulletFacingRight = facingTempVar;
-		owner = netId;
+//		owner = netId;
 		bullet.GetComponent<cutlass_chop_bullet> ().bulletOwner = owner;		  	  	
 		NetworkServer.Spawn(bullet);
 	    Destroy(bullet, 0.5f);
@@ -1228,7 +1292,7 @@ public class SealControl2 : NetworkBehaviour {
 		var bullet = (GameObject)Instantiate (cutlass_tail_bulletPrefab, bulletSpawnLoc, combat_bulletSpawn.rotation);    	
 		bullet.GetComponent<Rigidbody2D>().velocity = bullet.transform.right * move * 1.5f;
 		bullet.GetComponent<cutlass_tail_bullet> ().bulletFacingRight = facingTempVar;
-		owner = netId;
+//		owner = netId;
 		bullet.GetComponent<cutlass_tail_bullet> ().bulletOwner = owner;		  	  	
 		NetworkServer.Spawn(bullet);
 	    Destroy(bullet, 0.5f);
