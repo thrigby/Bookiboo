@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Baby Seal Deathmatch</title>
+<style>
+body { margin: 0; background: #1a3a5c; display: flex; 
+justify-content: center; align-items: center; height: 100vh; }
+canvas { border: 2px solid #fff; }
+</style>
+</head>
+<body>
+<canvas id="game" width="800" height="400"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+<script>
+const config = {
+  type: Phaser.CANVAS,
+  canvas: document.getElementById('game'),
+  width: 800,
+  height: 400,
+  scene: {
+    preload() {
+      this.load.spritesheet('seal', 
+        'Assets/Sprites/seal_sprite_2048_256.png',
+        { frameWidth: 256, frameHeight: 256 });
+    },
+    create() {
+      this.anims.create({
+        key: 'swim',
+        frames: this.anims.generateFrameNumbers('seal', 
+          { start: 0, end: 7 }),
+        frameRate: 10,
+        repeat: -1
+      });
+      this.seal = this.add.sprite(100, 200, 'seal');
+      this.seal.play('swim');
+      this.seal.setScale(0.5);
+    },
+    update() {
+      this.seal.x += 2;
+      if (this.seal.x > 900) this.seal.x = -100;
+    }
+  }
+};
+new Phaser.Game(config);
+</script>
+</body>
+</html>
