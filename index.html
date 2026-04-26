@@ -22,13 +22,14 @@ const config = {
     preload() {
       this.load.spritesheet('seal', 
         'Assets/Animations/seal_run_with_club_512_2048.png',
-        { frameWidth: 256, frameHeight: 256 });
+      { frameWidth: 256, frameHeight: 256, endFrame: 15 });
+
     },
     create() {
       this.anims.create({
         key: 'swim',
         frames: this.anims.generateFrameNumbers('seal', 
-          { start: 0, end: 7 }),
+          { start: 0, end: 15 }),
         frameRate: 10,
         repeat: -1
       });
